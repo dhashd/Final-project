@@ -48,12 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlayFair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayFair.Designer.cs">
+      <DependentUpon>PlayFair.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="primeNumber\Matrix.cs" />
     <Compile Include="RSA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,8 +69,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="soure\Alphabet.cs" />
+    <Compile Include="soure\Class1.cs" />
+    <Compile Include="soure\MatrixPlayFair.cs" />
+    <Compile Include="soure\Matrix.cs" />
+    <Compile Include="soure\Coordinate.cs" />
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayFair.resx">
+      <DependentUpon>PlayFair.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RSA.resx">
       <DependentUpon>RSA.cs</DependentUpon>
@@ -90,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngimg.com - buttons_PNG128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cybersecurity-lock-GettyImages-1374164757-1600x900.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

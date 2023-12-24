@@ -59,5 +59,25 @@ namespace primeNumber.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cybersecurity_lock_GettyImages_1374164757_1600x900 {
+            get {
+                object obj = ResourceManager.GetObject("Cybersecurity-lock-GettyImages-1374164757-1600x900", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngimg_com___buttons_PNG128 {
+            get {
+                object obj = ResourceManager.GetObject("pngimg.com - buttons_PNG128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

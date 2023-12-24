@@ -22,5 +22,11 @@ namespace primeNumber
             RSA rSA = new RSA();
             rSA.Show();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            PlayFair playfairForm = new PlayFair();
+            playfairForm.Show();
+        }
     }
 }

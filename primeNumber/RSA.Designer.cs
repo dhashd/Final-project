@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_createKey = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RSA));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -41,27 +41,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btn_encrypt = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.btn_decrypt = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btn_decrypt = new System.Windows.Forms.Button();
+            this.btn_encrypt = new System.Windows.Forms.Button();
+            this.btn_createKey = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_createKey
-            // 
-            this.btn_createKey.Location = new System.Drawing.Point(560, 60);
-            this.btn_createKey.Name = "btn_createKey";
-            this.btn_createKey.Size = new System.Drawing.Size(137, 51);
-            this.btn_createKey.TabIndex = 4;
-            this.btn_createKey.Text = "CALCULATE";
-            this.btn_createKey.UseVisualStyleBackColor = true;
-            this.btn_createKey.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -102,6 +93,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(100, 166);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -168,17 +160,6 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "d number";
             // 
-            // btn_encrypt
-            // 
-            this.btn_encrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_encrypt.Location = new System.Drawing.Point(814, 335);
-            this.btn_encrypt.Name = "btn_encrypt";
-            this.btn_encrypt.Size = new System.Drawing.Size(170, 82);
-            this.btn_encrypt.TabIndex = 11;
-            this.btn_encrypt.Text = "Encrypt";
-            this.btn_encrypt.UseVisualStyleBackColor = true;
-            this.btn_encrypt.Click += new System.EventHandler(this.btn_encrypt_Click);
-            // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,17 +177,6 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(760, 184);
             this.textBox6.TabIndex = 13;
-            // 
-            // btn_decrypt
-            // 
-            this.btn_decrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_decrypt.Location = new System.Drawing.Point(814, 552);
-            this.btn_decrypt.Name = "btn_decrypt";
-            this.btn_decrypt.Size = new System.Drawing.Size(170, 82);
-            this.btn_decrypt.TabIndex = 11;
-            this.btn_decrypt.Text = "Decrypt";
-            this.btn_decrypt.UseVisualStyleBackColor = true;
-            this.btn_decrypt.Click += new System.EventHandler(this.btn_decrypt_Click);
             // 
             // label7
             // 
@@ -240,6 +210,41 @@
             this.label9.TabIndex = 16;
             this.label9.Text = "Plain text";
             // 
+            // btn_decrypt
+            // 
+            this.btn_decrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.btn_decrypt.Image = global::primeNumber.Properties.Resources.pngimg_com___buttons_PNG128;
+            this.btn_decrypt.Location = new System.Drawing.Point(814, 552);
+            this.btn_decrypt.Name = "btn_decrypt";
+            this.btn_decrypt.Size = new System.Drawing.Size(131, 38);
+            this.btn_decrypt.TabIndex = 11;
+            this.btn_decrypt.Text = "Decrypt";
+            this.btn_decrypt.UseVisualStyleBackColor = true;
+            this.btn_decrypt.Click += new System.EventHandler(this.btn_decrypt_Click);
+            // 
+            // btn_encrypt
+            // 
+            this.btn_encrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.btn_encrypt.Image = global::primeNumber.Properties.Resources.pngimg_com___buttons_PNG128;
+            this.btn_encrypt.Location = new System.Drawing.Point(814, 335);
+            this.btn_encrypt.Name = "btn_encrypt";
+            this.btn_encrypt.Size = new System.Drawing.Size(131, 38);
+            this.btn_encrypt.TabIndex = 11;
+            this.btn_encrypt.Text = "Encrypt";
+            this.btn_encrypt.UseVisualStyleBackColor = true;
+            this.btn_encrypt.Click += new System.EventHandler(this.btn_encrypt_Click);
+            // 
+            // btn_createKey
+            // 
+            this.btn_createKey.Image = global::primeNumber.Properties.Resources.pngimg_com___buttons_PNG128;
+            this.btn_createKey.Location = new System.Drawing.Point(560, 60);
+            this.btn_createKey.Name = "btn_createKey";
+            this.btn_createKey.Size = new System.Drawing.Size(131, 38);
+            this.btn_createKey.TabIndex = 4;
+            this.btn_createKey.Text = "Calculate";
+            this.btn_createKey.UseVisualStyleBackColor = true;
+            this.btn_createKey.Click += new System.EventHandler(this.button1_Click);
+            // 
             // RSA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -266,7 +271,7 @@
             this.Controls.Add(this.btn_createKey);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "RSA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
